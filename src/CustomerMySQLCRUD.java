@@ -1,3 +1,13 @@
+/** Project: Solo Lab3 Database
+ * Purpose Details: code for SQL crud
+ * Course: IST 242
+ * Author: Nafiz Hussain
+ * Date Developed: 2/22/2026
+ * Last Date Changed: 3/1/2026
+ * Rev: 3
+
+ */
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

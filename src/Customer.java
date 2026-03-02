@@ -1,3 +1,14 @@
+/** Project: Solo Lab3 Database
+ * Purpose Details: makes customer a separate entity accessible to both the cruds so i didn't hve to write it again
+ * Course: IST 242
+ * Author: Nafiz Hussain
+ * Date Developed: 2/22/2026
+ * Last Date Changed: 3/1/2026
+ * Rev: 3
+
+ */
+
+
 public class Customer {
     private int customerId;
     private String firstName;
