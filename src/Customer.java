@@ -4,13 +4,18 @@ public class Customer {
     private String lastName;
     private String state;
     private double purchaseTotal;
+    private String purchaseType;  // New field: e.g., "Electronics", "Clothing", "Groceries", etc.
+    private String paymentMethod; // New field: "Cash" or "Card"
 
-    public Customer(int customerId, String firstName, String lastName, String state, double purchaseTotal) {
+    public Customer(int customerId, String firstName, String lastName, String state,
+                    double purchaseTotal, String purchaseType, String paymentMethod) {
         this.customerId = customerId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.state = state;
         this.purchaseTotal = purchaseTotal;
+        this.purchaseType = purchaseType;
+        this.paymentMethod = paymentMethod;
     }
 
     // Getters
@@ -34,6 +39,14 @@ public class Customer {
         return purchaseTotal;
     }
 
+    public String getPurchaseType() {
+        return purchaseType;
+    }
+
+    public String getPaymentMethod() {
+        return paymentMethod;
+    }
+
     // Setters
     public void setCustomerId(int customerId) {
         this.customerId = customerId;
@@ -55,6 +68,14 @@ public class Customer {
         this.purchaseTotal = purchaseTotal;
     }
 
+    public void setPurchaseType(String purchaseType) {
+        this.purchaseType = purchaseType;
+    }
+
+    public void setPaymentMethod(String paymentMethod) {
+        this.paymentMethod = paymentMethod;
+    }
+
     @Override
     public String toString() {
         return "Customer{" +
@@ -63,6 +84,8 @@ public class Customer {
                 ", lastName='" + lastName + '\'' +
                 ", state='" + state + '\'' +
                 ", purchaseTotal=" + purchaseTotal +
+                ", purchaseType='" + purchaseType + '\'' +
+                ", paymentMethod='" + paymentMethod + '\'' +
                 '}';
     }
 }
